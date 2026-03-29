@@ -1,10 +1,10 @@
-.noEmptyBasket{
+.noEmptyBasket {
   display: flex !important;
   justify-content: space-between;
-  padding:0 5rem;
+  padding: 0 5rem;
 }
 
-.emptyBasket{
+.emptyBasket {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -12,85 +12,84 @@
   width: 50%;
 }
 
-.basketListItem{
-  display:flex;
+.basketListItem {
+  display: flex;
   width: 100%;
   justify-content: center !important;
 }
 
-.costPrice{
-  width:40%;
-  padding:1rem 0rem;
-  margin-left:2rem;
+.costPrice {
+  width: 40%;
+  padding: 1rem 0rem;
+  margin-left: 2rem;
 }
 
-.costPriceItem{
-  padding:1rem;
+.costPriceItem {
+  padding: 1rem;
   border-bottom: 1px solid #d8d8d8;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
 }
 
-
-.orderSummaryText{
-  white-space: nowrap; 
-  width: 12rem; 
+.orderSummaryText {
+  white-space: nowrap;
+  width: 12rem;
   overflow: hidden;
   text-overflow: ellipsis !important;
 }
 
-.totalPrice{
+.totalPrice {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
 
-.totalPriceTitle{
-  color: rgb(255, 200, 0);
+.totalPriceTitle {
+  color: #ff8f00; /* amber 800*/
   font-weight: 600;
 }
 
-.deleteAllButton{
-  color:red !important;
-  font-size:12px !important;
+.deleteAllButton {
+  color: red !important;
+  font-size: 12px !important;
 }
 
-.deleteAllButton:hover{
+.deleteAllButton:hover {
   background-color: transparent !important;
 }
 
-@media only screen and (max-width:1124px) {
-  .emptyBasket{
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  width: 70%;
-}
-.noEmptyBasket{
-  display: flex !important;
-  flex-direction: column;
-  justify-content: space-between;
-  padding:0 1rem;
-}
+@media only screen and (max-width: 1124px) {
+  .emptyBasket {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+  }
+  .noEmptyBasket {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
 
-.costPrice{
-  width:100%;
-  margin-left: 0;
-}
+  .costPrice {
+    width: 100%;
+    margin-left: 0;
+  }
 
-.orderSummaryText{
-  width:50%;
-}
+  .orderSummaryText {
+    width: 50%;
+  }
 
-.totalPrice{
-  display: flex;
-  flex-direction: column-reverse;
-}
+  .totalPrice {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-.totalPriceTitle{
-  font-size:16px !important;
-}
+  .totalPriceTitle {
+    font-size: 16px !important;
+  }
 }

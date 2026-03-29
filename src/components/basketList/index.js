@@ -55,7 +55,7 @@ const BasketList = () => {
             <Typography
               fontSize={18}
               fontWeight={600}
-              color={amber["A400"]}
+              color={amber["800"]}
               borderBottom={1}
               borderColor={"black"}
               width={200}
