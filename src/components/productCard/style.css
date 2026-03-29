@@ -1,0 +1,97 @@
+.cardContainer{
+  padding:1rem;
+}
+
+.listCard{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productImage{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage img{
+  object-fit: cover;
+  height:140px;
+}
+
+.cardBottom{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-top: 1px solid #18181c;
+   margin: 3rem 0rem;
+}
+
+.cardInfo{
+  width: 100%;
+  height:50px;
+  display:flex;
+  margin: 0.5rem 0rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listProductTitle{
+  text-align: left;
+  width:70%
+}
+
+.listProductPrice{
+  background-color: #18181c;
+  color:white;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  user-select: none;
+  cursor:pointer;
+}
+
+.rateingStars{
+  margin-top: 0.5rem;
+   font-size: 10px !important;
+   color:#18181c !important;
+   display: flex;
+   justify-content:flex-end !important;
+   align-items: center;
+}
+
+.countText{
+  font-size:10px !important;
+}
+
+.badge{
+  background-color: #18181c !important;
+  border-left:2px solid rgb(230, 190, 136);
+  border-bottom:2px solid rgb(168, 142, 108);
+  padding:5px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  width:80px;
+  color:white !important;
+  position:absolute !important;
+  top:0;
+  right:0;
+}
+
+.discoverButton{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+  background-color: rgb(255, 200, 0) !important;
+  color:#18181c !important;
+  font-weight: 500 !important;
+}

@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  text-decoration: none !important;
+}
+
+
+.weAreOpen img{
+  object-fit: contain;
+  width:600px;
+}
+
+@media only screen and (max-width:500px) {
+  .weAreOpen img{
+  object-fit: contain;
+  width:300px;
+}
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

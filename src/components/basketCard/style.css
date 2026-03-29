@@ -1,0 +1,99 @@
+.basketCard{
+  display: flex;
+  width:47em;
+  position: relative;
+}
+
+.basketCardContent{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:36px 16px !important;
+}
+
+.basketBadge{
+  background-color: #18181c !important;
+  border-left:2px solid rgb(230, 190, 136);
+  border-bottom:2px solid rgb(168, 142, 108);
+  padding:10px 15px;
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  justify-content: center;
+  width:120px;
+  color:white !important;
+  position:absolute !important;
+  top:0;
+  right:0;
+}
+
+.basketCardContent{
+  display:flex;
+  max-height: 15rem;
+}
+
+.basketItemImage{
+  width:20%;
+  height:120px;
+  margin-right:3rem;
+}
+
+.basketItemImage img{
+  object-fit: contain;
+  height: 120px;
+}
+
+.basketItemInfo{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+}
+
+.basketItemPrice{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 200, 0);
+  margin-top: 1rem !important;
+}
+
+.basketItemCount{
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width:1200px) {
+.basketCard{
+  width:34em;
+}
+}
+
+
+@media (max-width:768px) {
+ .basketCard{
+  width: 100%;
+ }
+
+ .basketItemImage{
+  width:100%;
+  margin:1rem 0rem;
+ }
+
+ .basketCardContent{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:36px 16px !important;
+  max-height: max-content;
+}
+.basketItemInfo{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  align-items: center !important;
+}
+}
+
