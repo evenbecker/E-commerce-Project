@@ -1,41 +1,46 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
-import { Badge, Card, CardContent, Typography } from '@mui/material'
-import './style.css'
-import { CircleRounded } from '@mui/icons-material'
-import AddToBasket from '../button'
+import React from "react";
+import { Badge, Card, CardContent, Typography } from "@mui/material";
+import "./style.css";
+import { CircleRounded } from "@mui/icons-material";
+import AddToBasket from "../button";
 
 const ProductDetail = ({ product }) => {
-
-
   return (
-    <div className='productDetailContainer'>
+    <div className="productDetailContainer">
       <Card className="productDetailCard">
-        <CardContent className='detailCard'>
-            <Badge className='badge' color='secondary'>
+        <CardContent className="detailCard">
+          <Badge className="badge" color="secondary">
             {product.category}
           </Badge>
-          <div className='productDetailImage'>
+          <div className="productDetailImage">
             <img src={product.image} />
           </div>
-          <div className='detailCardInfo'>
-           <Typography className="detailProductTitle" gutterBottom fontSize={12} component="div">
-           <CircleRounded/> {product.title}
+          <div className="detailCardInfo">
+            <Typography
+              className="detailProductTitle"
+              gutterBottom
+              fontSize={12}
+              component="div"
+            >
+              <CircleRounded /> {product.title}
             </Typography>
-            <Typography className="detailProductDescription" fontSize={12} component="div">
+            <Typography
+              className="detailProductDescription"
+              fontSize={12}
+              component="div"
+            >
               {product.description}
             </Typography>
-          <Typography variant='body2' fontSize={18}>
-              <div className="detailProductPrice">
-                £ {product.price}
-              </div>
+            <Typography variant="body2" fontSize={18}>
+              <div className="detailProductPrice">€ {product.price}</div>
             </Typography>
-            <AddToBasket item={product}/>
+            <AddToBasket item={product} />
           </div>
         </CardContent>
-     </Card>
+      </Card>
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;
